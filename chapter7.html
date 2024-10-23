@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    legend{font-weight: bold;text-align: center;}
+    fieldset{border:double}
+    span,p{font-weight: bold;}
+</style>
+    <title>Chapter 07 forms</title>
+
+</head>
+<body>
+    <h1>Feedback Form:</h1>
+    <form> 
+<fieldset>
+        <legend > Your Details</legend>
+
+        <label for="Name">Name</label>
+        <input type="text" placeholder="Enter your name">
+        <br/>
+        <br/>
+        <label for="emial">Email</label>
+        <input type="email" placeholder="your valid email address">
+    
+</fieldset>
+<br/>
+        <fieldset>
+        <legend >Your Reviews</legend>
+        <span>How did you hear about us</span>
+
+        <select>  
+<option>Google</option>
+<option>Social Media</option>
+<option>Friends</option>
+<option>Main Stream Media</option>
+
+        </select>
+<br/>
+<br/>
+<span>We should expand our product range in :</span>
+            <input type="checkbox" id="skin" name="p-range" value="skin" >
+             <label for="skin" >Skin</label>
+            <input type="checkbox" id="hair" name="p-range" value="hairs" >
+            <label for="hairs" >hairs</label>
+            <input type="checkbox" id="nails" name="p-range" value="nails" >
+            <label for="nails" >nails</label>
+       
+ <br/>
+ <br/>
+                        <span>Would you visit us again</span>
+                        <br/>
+                        <input type="radio" id="yes" name="visit" value="yes">
+                        <label for="yes">yes</label>
+                        <input type="radio" id="no" name="visit" value="no">
+                        <label for="yes">No</label>
+                        <input type="radio" id="Don't Know"  name="visit" value="don't know">
+                        <label for="Don't know">Don't know</label>             
+            
+        </fieldset>
+
+<br/>
+<fieldset>
+<p>Suggestions</p>
+
+<textarea row="2" cols="45" placeholder="your suggestion to make our product better"></textarea>
+</fieldset>
+<br/>
+<button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
